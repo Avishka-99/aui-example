@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@avi99/aui@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@avi99/aui/-/aui-0.1.3.tgz"
-  integrity sha512-nisdf6Mtb9NuKTKd2QXaRloXrGqToC/qhxZYZe6ca43xWsLCKvWcYjTtlYrgwAbOKHIKO5PA/OZFOwMpLw9vEw==
+"@avi99/aui@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/@avi99/aui/-/aui-0.1.5.tgz"
+  integrity sha512-FRYldyT1jy77MYMURkMdQM81dyJaxRdI+3kfzUL0FMbd7hXFeehNZEHbiLxS3t1KTN++vPLK9ZDOnL9aAPs9qg==
   dependencies:
     "@avi99/aui" "file:"
     "@types/react-native-vector-icons" "^6.4.18"
@@ -27,7 +27,7 @@
     react-native-vector-icons "^10.1.0"
 
 "@avi99/aui@file:":
-  version "0.1.3"
+  version "0.1.5"
   resolved "file:node_modules/@avi99/aui"
   dependencies:
     "@avi99/aui" "file:"
@@ -2748,7 +2748,7 @@ at-least-node@^1.0.0:
   version "1.0.0"
   resolved "file:"
   dependencies:
-    "@avi99/aui" "^0.1.3"
+    "@avi99/aui" "^0.1.5"
     "@react-navigation/bottom-tabs" "^6.6.1"
     "@react-navigation/native" "^6.1.18"
     "@react-navigation/stack" "^6.4.1"

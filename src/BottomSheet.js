@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import Bottomsheet from '@avi99/aui/src/Bottomsheet/Bottomsheet';
+import { BottomSheet } from '@avi99/aui/src';
 import { useRef } from 'react';
 import { Portal } from '@avi99/aui/src';
 import { Button } from '@avi99/aui/src';
@@ -29,17 +29,17 @@ const Sheet = () => {
             </View>
 
             <Portal name="bottomsheet">
-                <Bottomsheet height={'90%'} ref={sheetRef} backdropColor={'black'} close={closeSheet}>
+                <BottomSheet height={'90%'} ref={sheetRef} backdropColor={'black'} close={closeSheet}>
                     <View style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
                         <Button onPress={closeSheet} title={'close sheet'} mode='flat' />
                     </View>
-                </Bottomsheet>
+                </BottomSheet>
             </Portal>
-            <Bottomsheet height={'90%'} ref={sheetRef_2} backdropColor={'black'} close={closeSheet}>
+            <BottomSheet height={'90%'} ref={sheetRef_2} backdropColor={'black'} close={closeSheet}>
                 <View style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
                     <Button onPress={closeSheet_2} title={'close sheet'} mode='flat' />
                 </View>
-            </Bottomsheet>
+            </BottomSheet>
         </View>
     )
 }
@@ -50,8 +50,8 @@ export default function BottomSheetPage() {
             screenOptions={{
                 tabBarShowLabel: false,
                 tabBarIconStyle: { display: 'none' },
-                tabBarLabelStyle: { textAlign: 'center',fontSize:32},              
-            }}          
+                tabBarLabelStyle: { textAlign: 'center', fontSize: 32 },
+            }}
         >
             <Tab.Screen
                 name='Bottom Sheet'
